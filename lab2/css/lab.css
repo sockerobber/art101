@@ -2,7 +2,7 @@
 
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
 h1 {
-  color: magenta;
+  color: rgb(34, 54, 170);
   font-size: 200%;
 }
 
