@@ -21,29 +21,23 @@ $(document).ready(function() {
     
     function fizzBuzz() {
         var oneLongString = "";
-
+        
         for (var i = 1; i <= 200; i++) {
             var result = "";
-
             if (i % 3 === 0) {
                 result += "Fizz";
             }
-
             if (i % 5 === 0) {
                 result += "Buzz";
             }
-
             if (i % 7 === 0) {
                 result += "Boom";
             }
-
             if (result === "") {
                 result = i; 
             }
-
             oneLongString += result + "<br>";
         }
-
         $("#output").html(oneLongString);
     }
 
