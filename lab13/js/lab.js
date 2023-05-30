@@ -44,4 +44,24 @@ $(document).ready(function() {
     fizzBuzz();
 });
 
+var isResultsVisible = false;
+
+function toggleResults() {
+    isResultsVisible = !isResultsVisible;
+  
+    if (isResultsVisible) {
+      if ($("#output").html().trim() === "") {
+        fizzBuzz();
+      }
+      $("#output").show();
+      $("#result-toggle-btn").text("Hide Results");
+    } else {
+      $("#output").hide();
+      $("#result-toggle-btn").text("Show Results");
+    }
+  }
+  
+
+$("#result-toggle-btn").click(toggleResults);
+
 
