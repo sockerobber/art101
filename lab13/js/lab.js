@@ -44,17 +44,22 @@ $(document).ready(function() {
     fizzBuzz();
 });
 
+//Make a new function that takes the results and hides them or shows them deoending on the toggle option
+//Debugging the lab to create a button to show results or hide, can showcase how far I've gotten in this class
 var isResultsVisible = false;
 
 function toggleResults() {
+    //have to start off false to manipulate the toggle options
     isResultsVisible = !isResultsVisible;
   
     if (isResultsVisible) {
       if ($("#output").html().trim() === "") {
         fizzBuzz();
       }
+      //shows the results already visible and a click of the button will hide the results
       $("#output").show();
       $("#result-toggle-btn").text("Hide Results");
+      //changes the visibility of the reuslts once clicked
     } else {
       $("#output").hide();
       $("#result-toggle-btn").text("Show Results");
